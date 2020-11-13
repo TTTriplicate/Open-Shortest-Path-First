@@ -1,4 +1,10 @@
 services:
+  djikstra:
+    image: tttriplicate/djikstra:simple
+    links:
+      - mysql
+    depends_on:
+      - "mysql"
   mysql:
     image: mysql:latest
     ports:
