@@ -1,6 +1,12 @@
 # Problem Set 3
 ## Open Shortest Path
 
+### REQUIREMENTS
+
+This program is designed to be run in Docker-Compose version 2 or later.  It will not work as-is on Linux systems, which use Docker-Compose v1.x.
+
+In order to run this program, Docker must be installed on the system with a docker-compose version of 2 or later.  This can be confirmed with the command `docker-compose --version`.
+
 ### Distances During Djikstra's Algorithm
 
 Rather than do this by hand, I chose to write some code to do it.  I stored the Node and Edge information in a `MySQL` instance, and wrote a python script to access that information and calculate the minimum-length paths to each node from `0`.
