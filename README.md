@@ -13,6 +13,7 @@ The results were stored in a dictionary, mapping the router label to the current
 
 The actual output of the program:
 ```python
+{0: 0, 1: 0, 2: 0, 4: 0, 5: 0, 7: 0, 9: 0, 10: 0}
 {0: 0, 1: 1, 2: 0, 4: 8, 5: 0, 7: 4, 9: 0, 10: 0}
 {0: 0, 1: 1, 2: 3, 4: 7, 5: 0, 7: 4, 9: 0, 10: 0}
 {0: 0, 1: 1, 2: 3, 4: 7, 5: 0, 7: 4, 9: 0, 10: 0}

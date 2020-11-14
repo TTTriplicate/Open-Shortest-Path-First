@@ -15,7 +15,7 @@ def connect():
     except mysql.connector.Error as err:
         #this boots way faster than the DB in Docker, automating restart
         print("Something went wrong: {}".format(err))
-        time.sleep(10)
+        time.sleep(15)
         return connect()
 
     return conn
