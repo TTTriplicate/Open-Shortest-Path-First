@@ -7,7 +7,7 @@ This program is designed to be run in Docker-Compose version 2 or later.  It wil
 
 In order to run this program, Docker must be installed on the system with a docker-compose version of 2 or later.  This can be confirmed with the command `docker-compose --version`.
 
-With the correct installed programs, this can be run by navigating to the top-level cloned directory and running `docker-compose up`,
+With the correct installed programs, this can be run by navigating to the top-level cloned directory and running `docker-compose up`.
 
 ### Distances During Djikstra's Algorithm
 
@@ -19,7 +19,7 @@ This continued until all paths had been exhausted.  If the graph in question wer
 
 The results were stored in a dictionary, mapping the router label to the current minimum length, and outputted at each iteration.
 
-The actual output of the program:
+The actual output of the program with the given graph:
 ```python
 {0: 0, 1: 0, 2: 0, 4: 0, 5: 0, 7: 0, 9: 0, 10: 0}
 {0: 0, 1: 1, 2: 0, 4: 8, 5: 0, 7: 4, 9: 0, 10: 0}
