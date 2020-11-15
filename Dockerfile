@@ -2,8 +2,8 @@ FROM python:3
 LABEL AUTHOR=tttriplicate@gmail.com
 
 WORKDIR /usr/src/app
-COPY ./djikstra ./
+COPY ./dijkstra ./
 
 RUN pip install -r requirements.txt
 
-CMD ["python", "./djikstra.py"]
+CMD ["python", "./dijkstra.py"]

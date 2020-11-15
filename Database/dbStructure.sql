@@ -1,9 +1,9 @@
-CREATE DATABASE djikstra;
+CREATE DATABASE dijkstra;
 
-CREATE USER 'djikstra'@'%' IDENTIFIED BY 'G3n3r1cP@ssw0rd!';
-GRANT ALL PRIVILEGES ON djikstra.* TO 'djikstra'@'%';
+CREATE USER 'dijkstra'@'%' IDENTIFIED BY 'G3n3r1cP@ssw0rd!';
+GRANT ALL PRIVILEGES ON dijkstra.* TO 'dijkstra'@'%';
 
-USE djikstra;
+USE dijkstra;
 
 CREATE TABLE nodes(
     node_id int primary key

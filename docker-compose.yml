@@ -1,6 +1,6 @@
 services:
-  djikstra:
-    image: tttriplicate/djikstra:simple
+  dijkstra:
+    image: tttriplicate/dijkstra:simple
     links:
       - mysql
     depends_on:

@@ -9,7 +9,7 @@ In order to run this program, Docker must be installed on the system with a dock
 
 With the correct installed programs, this can be run by navigating to the top-level cloned directory and running `docker-compose up`.
 
-### Distances During Djikstra's Algorithm
+### Distances During dijkstra's Algorithm
 
 Rather than do this by hand, I chose to write some code to do it.  I stored the Node and Edge information in a `MySQL` instance, and wrote a python script to access that information and calculate the minimum-length paths to each node from `0`.
 

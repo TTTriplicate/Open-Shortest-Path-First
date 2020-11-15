@@ -8,8 +8,8 @@ def connect():
     try:
         conn = mysql.connector.connect(
             host="mysql",
-            database="djikstra",
-            user="djikstra",
+            database="dijkstra",
+            user="dijkstra",
             password="G3n3r1cP@ssw0rd!"
         )
     except mysql.connector.Error as err:
