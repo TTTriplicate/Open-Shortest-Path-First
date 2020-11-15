@@ -13,7 +13,7 @@ def connect():
             password="G3n3r1cP@ssw0rd!"
         )
     except mysql.connector.Error as err:
-        #this boots way faster than the DB in Docker, automating restart
+        #this boots way faster than the DB in Docker even with a dependency statement, automating restart
         print("Something went wrong: {}".format(err))
         time.sleep(15)
         return connect()
