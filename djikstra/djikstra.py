@@ -36,8 +36,18 @@ check or recheck.
             pending.append(result[1])
 
 
+def nodesMap():
+    #Gets the nodes from the DB and makes a dict, with initial values set to 0
+    conn = connect()
+    cursor = conn.cursor()
+    cursor.execute("SELECT node_id from nodes ORDER BY node_id asc")
+    nodes = {}
+    for result in cursor:
+        nodes.update({result[0] : 0})
+    
+    return nodes
 
-values = {i : 0 for i in (0, 1, 2, 4, 5, 7, 9, 10)}
+values = nodesMap()
 pending = deque()
 pending.append(0)
 
